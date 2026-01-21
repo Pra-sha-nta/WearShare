@@ -1,0 +1,57 @@
+.about {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px; /* Reduced overall gap between image and text */
+}
+
+.about .about_image {
+    flex: 1;
+    text-align: center;
+}
+
+.about .about_image img {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about .about_tag {
+    flex: 1;
+    max-width: 650px;
+}
+
+.about .about_tag h1 {
+    font-size: 50px;
+    margin-bottom: 15px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.about .about_tag p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about_image {
+        margin-bottom: 20px;
+    }
+    .about .about_tag {
+        max-width: 100%;
+    }
+    .about .about_tag h1 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,54 @@
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    font-family: sans-serif;
+}
+
+header nav .logo  img {
+    height: 80px;
+    margin-top: 0px;
+    float: left;
+    margin-left: 15%;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+header nav .tagline{
+    color:#089da1;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0;
+    font-size:small;
+    
+}
+header nav ul {
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+header nav li a:hover {
+    color: #089da1;
+}
+
+header nav .social_icon i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+header nav .social_icon i:hover {
+    color: #089da1;
+    cursor: pointer;
+}

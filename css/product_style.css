@@ -1,0 +1,113 @@
+main {
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.product h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.product .product_box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 25px 0;
+
+}
+
+.product .product_box .product_card {
+    width: 250px;
+    height: auto;
+    /* Adjust to auto for dynamic height */
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    /* Ensure the children are stacked vertically */
+    justify-content: space-between;
+    /* Space out the children */
+}
+
+.product .product_box .product_card:hover {
+    box-shadow: 0 0 5px #fa02c0;
+}
+
+.product .product_box .product_card .product_image {
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(8, 157, 161, 0.7);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product .product_box .product_card .product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.product .product_box .product_card:hover .product_image img {
+    transform: scale(1.1);
+}
+
+.product .product_box .product_card .product_tag {
+    margin-top: 8px;
+}
+
+.product .product_box .product_card .product_tag h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.product .product_box .product_card .product_tag p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.product .product_box .product_card .product_tag .product_btn {
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #089da1;
+    display: inline-block;
+    margin-top: 8px;
+}
+.product .product_box .product_card .product_btn:hover {
+    background: #089da1;
+    color: #fff;
+
+}
+.product .product_box .product_card .product_stock {
+    color:#089da1;
+    font-weight: bold;
+
+}
+.product .product_box .product_card .product_outofstock {
+    color:red;
+    font-weight: bold;
+
+}
+.product .product_box .product_card .product_price {
+    color:green;
+    font-weight: bold;
+
+}
+
